@@ -83,12 +83,13 @@ img {
   display: flex;
   align-items: center;
 }
-
+.nav-item {
+  color: var(--second-accent-color);
+}
 .nav-list {
   display: flex;
   gap: 40px;
   /*padding: 24px 0;*/
-  color: var(--second-accent-color);
 }
 .current {
   position: relative;
@@ -316,7 +317,7 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-card {
-  fill: var(--primary-white-color);
+  fill: var(--color-cloud);
 }
 .social-networks:is(:hover, :focus) {
   background-color: var(--second-accent-color);
@@ -429,7 +430,9 @@ img {
   border-radius: 4px;
   padding: 12px 24px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-button:hover,
@@ -451,17 +454,21 @@ img {
 .portfoliopage-items .text-title {
   margin-bottom: 8px;
 }
+.portfoliopage-a {
+  display: block;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .portfoliopage-items {
   width: calc((100% - 48px) / 3);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 .portfolio-text-container {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
 }
-.portfoliopage-items:hover {
+.portfoliopage-a:hover {
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
@@ -478,6 +485,7 @@ img {
   position: absolute;
   top: 0;
   left: 0;
+  padding: 40px 32px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -495,6 +503,9 @@ img {
   position: relative;
   min-width: 1440px;
   margin: 0 auto;
+}
+.container-logo {
+  margin-right: 120px;
 }
 .text-footer {
   color: var(--color-cloud);
