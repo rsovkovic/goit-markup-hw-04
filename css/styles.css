@@ -97,7 +97,7 @@ img {
 }
 .current {
   position: relative;
-  /* color: var(--second-accent-color); */
+  color: var(--second-accent-color);
 }
 .current::after {
   content: "";
@@ -115,7 +115,7 @@ img {
   gap: 40px;
 }
 .navigation-list {
-  color: var(--first-text-color);
+  color: var(--second-accent-color);
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
