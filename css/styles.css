@@ -70,6 +70,8 @@ img {
 /**----------------------------Header---------------------*/
 .header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .container-header {
   display: flex;
@@ -89,6 +91,7 @@ img {
 }
 .current {
   position: relative;
+  color: var(--second-accent-color);
 }
 .current::after {
   content: "";
@@ -174,6 +177,7 @@ img {
   background-color: var(--primary-accent-color);
   max-width: 1440px;
   margin: 0 auto;
+  background-position: center;
 }
 .section-one-container {
   /* background: var(--primary-accent-color); */
@@ -213,7 +217,7 @@ img {
   min-width: 169px;
   height: 56px;
   border: none;
-  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mainpage-button:hover,
 .mainpage-button:focus {
@@ -330,22 +334,20 @@ img {
   border-radius: 4px;
   border: 1px solid var(--lights-late);
   fill: var(--lights-late);
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-   background-color
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .section-five-items {
   width: 168px;
   height: 88px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
 }
 .section-five-list {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 24px;
-
-} 
+}
 /* .customers-container {
   width: 168px;
   height: 88px;
@@ -356,8 +358,8 @@ img {
   justify-content: center;
   margin-top: 72px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-} */ */
-.client-icon {
+} */
+*/ .client-icon {
   /* fll: var(--lights-late); */
   fill: currentColor;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -365,9 +367,9 @@ img {
 .section-five-items:is(:hover, :focus) .customers-link {
   border: 1px solid var(--second-accent-color);
   color: var(--second-accent-color);
+  fill: var(--second-accent-color);
 }
 .customers-link:is(:hover, :focus) .client-icon {
-  fill: var(--second-accent-color);
 }
 
 /**------------------------------All-text-page--------------*/
@@ -578,6 +580,7 @@ img {
 .close-button:hover,
 .close-button:focus {
   background-color: #404bbf;
+  border: none;
 }
 .icon-button {
   fill: var(--primary-accent-color);
