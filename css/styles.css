@@ -88,10 +88,10 @@ img {
   display: flex;
   gap: 40px;
   /*padding: 24px 0;*/
+  color: var(--second-accent-color);
 }
 .current {
   position: relative;
-  color: var(--second-accent-color);
 }
 .current::after {
   content: "";
@@ -281,7 +281,7 @@ img {
 }
 
 .work-card {
-  padding: 32px 16px;
+  padding: 32px 0;
 }
 .section-four {
   background-color: var(--color-cloud);
@@ -301,9 +301,13 @@ img {
   justify-content: center;
   gap: 24px;
 }
-.icon-container {
+.card-social-icon {
   width: 40px;
   height: 40px;
+}
+.social-networks {
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
   background-color: var(--primary-iris-color);
   display: flex;
@@ -314,7 +318,7 @@ img {
 .icon-card {
   fill: var(--primary-white-color);
 }
-.social-networks:is(:hover, :focus) .icon-container {
+.social-networks:is(:hover, :focus) {
   background-color: var(--second-accent-color);
 }
 /* .icon-container:hover,
@@ -524,7 +528,7 @@ img {
   left: 540px;
   margin-left: 120px;
 }
-.footer .social-networks:is(:hover, :focus) .icon-container {
+.footer .social-networks:is(:hover, :focus) {
   background-color: #31d0aa;
 }
 /** ----------------Modal-Btn----------------------- */
@@ -588,7 +592,7 @@ img {
 }
 .icon-button:hover,
 .icon-button:focus {
-  fill: #ffffff;
+  fill: var(--primary-white-color);
 }
 .is-hidden {
   opacity: 0;
