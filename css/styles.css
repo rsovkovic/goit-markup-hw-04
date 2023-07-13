@@ -329,7 +329,7 @@ img {
   height: 100%;
   border-radius: 4px;
   border: 1px solid var(--lights-late);
-  color: var(--lights-late);
+  fill: var(--lights-late);
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
    background-color
 }
@@ -358,11 +358,13 @@ img {
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 } */ */
 .client-icon {
-  fill: var(--lights-late);
+  /* fll: var(--lights-late); */
+  fill: currentColor;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .section-five-items:is(:hover, :focus) .customers-link {
   border: 1px solid var(--second-accent-color);
+  color: var(--second-accent-color);
 }
 .customers-link:is(:hover, :focus) .client-icon {
   fill: var(--second-accent-color);
