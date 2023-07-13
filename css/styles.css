@@ -83,9 +83,9 @@ img {
   display: flex;
   align-items: center;
 }
-.navigation-list .current {
+/* .navigation-list .current {
   color: #404bbf;
-}
+} */
 .nav-item {
   color: var(--second-accent-color);
 }
@@ -97,7 +97,7 @@ img {
 }
 .current {
   position: relative;
-  color: var(--second-accent-color);
+  /* color: var(--second-accent-color); */
 }
 .current::after {
   content: "";
