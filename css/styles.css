@@ -86,9 +86,9 @@ img {
 /* .navigation-list .current {
   color: #404bbf;
 } */
-.nav-item {
+/* .nav-item {
   color: var(--second-accent-color);
-}
+} */
 .nav-list {
   display: flex;
   gap: 40px;
