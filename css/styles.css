@@ -83,9 +83,12 @@ img {
   display: flex;
   align-items: center;
 }
-.nav-item {
+.navigation-list {
   color: var(--second-accent-color);
 }
+/* .nav-item {
+  color: var(--second-accent-color);
+} */
 .nav-list {
   display: flex;
   gap: 40px;
@@ -172,7 +175,7 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office\ 1\ pre.jpg);
+    url(../images/people-office.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-color: var(--primary-accent-color);
@@ -507,6 +510,10 @@ img {
 .container-logo {
   margin-right: 120px;
 }
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
 .text-footer {
   color: var(--color-cloud);
   font-size: 16px;
@@ -538,6 +545,9 @@ img {
   bottom: 132px;
   left: 540px;
   margin-left: 120px;
+}
+.footer .card-social-list {
+  gap: 16px;
 }
 .footer .social-networks:is(:hover, :focus) {
   background-color: #31d0aa;
@@ -601,8 +611,7 @@ img {
   fill: var(--primary-accent-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.icon-button:hover,
-.icon-button:focus {
+.icon-button:is(:hover, :focus) {
   fill: var(--primary-white-color);
 }
 .is-hidden {
