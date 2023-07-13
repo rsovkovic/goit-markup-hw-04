@@ -591,5 +591,5 @@ img {
   pointer-events: none;
 }
 .close-button:is(:hover, :focus) .icon-button {
-  fill: #ffffff;
+  fill: var(--primary-white-color);
 }
